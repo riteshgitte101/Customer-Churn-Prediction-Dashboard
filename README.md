@@ -12,23 +12,24 @@ and explains why, rather than just outputting a probability.
 
 ## Setup
 
-\```bash
+```bash
 pip install -r requirements.txt
 streamlit run app.py
-\```
+```
 
 Open `http://localhost:8501`. The model trains automatically on first launch (~10-30 seconds).
 
 ## Structure
 
-\```
-├── app.py                    # entry point, kicks off training on first run
+```text
+AI-Customer-Intelligence-Platform/
+├── app.py
 ├── pages/
-│   ├── 01_Overview.py        # churn stats, revenue at risk
-│   ├── 02_Analytics.py       # customer segments, service usage
-│   ├── 03_Predictions.py     # predict for one customer or batch CSV
-│   ├── 04_Explainability.py  # SHAP plots
-│   └── 05_Recommendations.py # rule-based retention suggestions
+│   ├── 01_Overview.py
+│   ├── 02_Analytics.py
+│   ├── 03_Predictions.py
+│   ├── 04_Explainability.py
+│   └── 05_Recommendations.py
 ├── core/
 │   ├── data.py
 │   ├── model.py
@@ -37,7 +38,7 @@ Open `http://localhost:8501`. The model trains automatically on first launch (~1
 ├── data/
 ├── models/
 └── requirements.txt
-\```
+```
 
 ## Stack
 
